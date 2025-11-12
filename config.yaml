@@ -1,0 +1,25 @@
+data:
+  sources:
+    - type: rss
+      url: "https://example.com/feed"
+    - type: webpage
+      url: "https://example.com/blog/post"
+    - type: pdf
+      url: "https://example.com/whitepaper.pdf"
+
+ingest:
+  chunk_size: 800
+  chunk_overlap: 100
+  min_chunk_length: 200
+
+vector_db:
+  type: faiss
+  path: "./data/faiss_index"
+  metadata_db: "./data/metadata.sqlite"
+
+embedder:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  batch_size: 64
+
+scheduler:
+  interval_minutes: 60

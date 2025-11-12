@@ -1,0 +1,16 @@
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+faiss-cpu>=1.7.4
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+feedparser>=6.0.10
+newspaper3k>=0.2.8
+pdfplumber>=0.7.5
+tqdm>=4.66.1
+python-dotenv>=1.0.0
+PyYAML>=6.0
+sqlite-utils>=3.11
+apscheduler>=3.10.1
+openai>=1.0.0
+matplotlib>=3.7.1
+pandas>=2.1.1
